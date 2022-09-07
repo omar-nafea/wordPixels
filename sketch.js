@@ -3,9 +3,7 @@ const density = '       .:-i|=+%O#@';
 let video;
 let div;
 
-
 function setup() {
-
     noCanvas();
     video = createCapture(VIDEO)
     video.size(40, 64);
@@ -29,9 +27,6 @@ function draw() {
             const c = density.charAt(charIndex);
             if (c === " ") image += '&nbsp;'
             else image += c;
-
-
-
         }
         image += '<br/>';
     }
